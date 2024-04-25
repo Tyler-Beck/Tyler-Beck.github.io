@@ -1,2 +1,2 @@
-# personal-website
-My official website
+# Tyler Beck - My Website
+
