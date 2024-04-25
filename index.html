@@ -1,1 +1,216 @@
-Hello World
+<html>
+  <head>
+    <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link rel="stylesheet" href=style.css>
+  </head>
+
+  <title>Tyler Beck</title>
+
+  <body>
+      <!--NAV BAR-->
+        <header :class="{ sticky: scrollPos > 50 }">
+          <div class="container">
+            <div class="nav-brand">
+                <h1><i class="nes-icon coin is-medium"></i>Tyler Beck</h1>
+            </div>
+            <div id="social-buttons" class="social-buttons">
+              <div class="share">
+                <div id="fixbutton">
+                <button id="aboutBtn" type="button" class="nes-btn is-primary">About</button>
+                <button id="skillsBtn" type="button" class="nes-btn is-primary">Skills</button>
+                <button id="projectsBtn" type="button" class="nes-btn is-primary">Projects</button>
+                </div>
+              <!--  <a href="https://twitter.com/TylerBeck__" target="_blank"><i class="nes-icon twitter"></i></a>
+                <a href="https://www.linkedin.com/in/tyler-beck-profile/" target="_blank"><i class="nes-icon linkedin"></i></a>
+                <a href="https://github.com/Tyler-Beck" target="_blank"><i class="nes-icon github"></i></a> -->
+              </div>
+            </div>
+          </div>
+        </header>
+
+      <br>
+      <br>
+
+      <!--MAIN SCREEN NOT IN CONTAINER-->
+        <div id="topscreen">
+          <i class="nes-icon is-large trophy"></i><h1>Hello! I'm Tyler</h1>
+          <section>
+            <button id="fixbutton" type="button" class="nes-btn is-primary" onclick="document.getElementById('dialog-default').showModal();">
+              Resume
+            </button>
+            <dialog class="nes-dialog" id="dialog-default">
+              <form method="dialog">
+                <p class="title"><h1>Resume</h1></p>
+                <span style="color: rgb(61, 139, 255);"><p><b><i>Education</i></b>
+                </span>
+                  <br>
+                  <hr>
+                  <span style="color: rgb(0, 0, 0);">The College of New Jersey
+                  <br>
+
+                  Bachelor of Science in Computer Science
+                  <br>
+                  Expected Graduation: May 2026 </span>
+                  
+                  <br>
+                  <br>
+
+                  <span style="color: rgb(61, 139, 255);"><b><i>Projects</i></b></span>
+                  <br>
+                  <hr>
+                  <span style="color: black;">Tax Filtration System
+                  <br>
+                   - Developed a C++ program to parse and filter input files, categorizing data into three distinct pools based on
+                  specified criteria which are insertion, deletion, and retrieval.</span>
+
+                  <br>
+                  <br>
+                
+                  <span style="color: rgb(61, 139, 255);"><p><b><i>Work Experience</i></b>
+                  </span>
+                    <br>
+                    <hr>
+                    <span style="color: black;">Boundless Ventures
+                    <h5>Lead Editor</h5>
+                     - Increased efficiency by organizing, editing, and publishing 3 Podcast episodes per week, resulting in a 25%
+                      increase in audience engagement and a boost in brand visibility.
+                      <br>
+                      <br>
+                      - Transformed longform content into 100+ social media posts, driving a 25% boost in audience reach and
+                      interaction.
+                      <br>
+                      <br>
+                      - Captured and edited footage for multiple sporting and media events, leading to a 15% growth in social media
+                      followers and online audience engagement. </span>
+
+                  <br>
+                  <br>
+
+                  <span style="color: rgb(61, 139, 255);"><p><b><i>Volunteering & Leadership</i></b>
+                  </span>
+                    <br>
+                    <hr>
+                    <span style="color: black;">Stray Dawgs Gym
+                    <h5>Volunteer Coaching</h5>
+                      - Conducted comprehensive Mixed Martial Arts (MMA) and Brazilian Jiu Jitsu (BJJ) classes, focusing on
+                      fundamental techniques, advanced strategies, and physical conditioning, tailored to students' skill levels and
+                      goals.
+                      <br>
+                      <br>
+                      - Implemented effective teaching methodologies to enhance students' understanding and proficiency in MMA
+                      and BJJ, emphasizing proper technique execution, defensive strategies, and situational awareness.
+                      <br>
+                      <br>
+                      - Fostered a supportive and motivating learning environment, providing individualized feedback, guidance, and
+                      mentorship to students, promoting growth, confidence, and discipline both on and off the mat. </span>
+
+                  <br>
+                  <br>
+
+                  <span style="color: rgb(61, 139, 255);"><p><b><i>Skills</i></b>
+                  </span>
+                    <br>
+                    <hr>
+                    <span style="color: black;"> Python, C++, Java, JavaScript, Rust, HTML, CSS, React, Node.js, Git, JupyterLab </span>
+                </p>
+                <menu class="dialog-menu">
+                  <button class="nes-btn">Cancel</button>
+                  <button class="nes-btn is-primary">Confirm</button>
+                </menu>
+              </form>
+            </dialog>
+            <a id="nes-button" href="https://twitter.com/TylerBeck__" target="_blank"><i class="nes-icon twitter is-medium"></i></a>
+            <a id="nes-button" href="https://www.linkedin.com/in/tyler-beck-profile/" target="_blank"><i class="nes-icon linkedin is-medium"></i></a>
+            <a id="nes-button" href="https://github.com/Tyler-Beck" target="_blank"><i class="nes-icon github is-medium"></i></a>
+          </section>
+
+          <br>
+          <br>
+        </div>
+
+      <br>
+    <!--ABOUT SECTION-->
+        <section id="About">
+          <div id="important-content" class="nes-container with-title">
+            <p class="title">About</p>
+            <span class="nes-text is-primary">Hello! My name is Tyler and I am a Computer Science student at The College of New Jersey.
+            I have developed a true passion for the entire umbrella of Computer Science and have made it a goal to experiment with as many things as I can.
+            To that point, this website you're on right now was more so an experiment than a necessity. 
+            <br>
+            <br>
+            Outside of Computer Science, I am an Amateur Mixed Martial Arts
+            fighter and coach. Moreover, Physics is a subject that I have always been fascinated by and is the main subject I am researching and reading about if it's not Computer Science.
+            I hope you enjoy my website and feel free to reach out to me on any of my social media platforms!
+            </span>  
+          </div>
+        </section>
+    
+      <div class="empty-space"></div>
+
+      <!--SKILLS SECTION-->
+        <section id="Skills">
+          <div id="important-content" class="nes-container is-dark with-title">
+              <p class="title">Skills</p>
+
+              <h3><u>Technical Languages:</u></h3> 
+              <button type="button" class="nes-btn is-primary">Python</button>
+              <button type="button" class="nes-btn is-primary">C++</button>
+              <button type="button" class="nes-btn is-primary">Java</button>
+              <button type="button" class="nes-btn is-primary">JavaScript</button>
+              <button type="button" class="nes-btn is-primary">Rust</button>
+              <button type="button" class="nes-btn is-primary">HTML</button>
+              <button type="button" class="nes-btn is-primary">CSS</button>
+
+              <br>
+              <br>
+
+              <h3><u>Technologies and Frameworks:</u></h3> 
+            <button type="button" class="nes-btn is-primary">React</button>
+            <button type="button" class="nes-btn is-primary">Node.js</button>
+            <button type="button" class="nes-btn is-primary">Git</button>
+            <button type="button" class="nes-btn is-primary">JupyterLab</button>
+            </label>
+          </div>
+        </section>
+
+      <div class="empty-space"></div>
+      <!--PROJECTS SECTION-->
+        <section id="Projects">
+          <div id="important-content" class="nes-container with-title">
+            <p class="title">Projects</p>
+            <span class="nes-text is-dark">Here are some of the projects I have worked on:</span>
+            <br>
+            <br>
+            <button type="button" class="nes-btn is-primary">Project 1</button>
+            <button type="button" class="nes-btn is-primary">Project 2</button>
+            <button type="button" class="nes-btn is-primary">Project 3</button>
+            <button type="button" class="nes-btn is-primary">Project 4</button>
+            <button type="button" class="nes-btn is-primary">Project 5</button>
+            
+            <button type="button" class="nes-btn is-primary">Project 6</button>
+            <button type="button" class="nes-btn is-primary">Project 7</button>
+            <button type="button" class="nes-btn is-primary">Project 8</button>
+            <button type="button" class="nes-btn is-primary">Project 9</button>
+            <button type="button" class="nes-btn is-primary">Project 10</button>    
+          </div>
+        </section>
+
+      <div class="empty-space"></div>
+
+
+      <!--FOOTER-->
+          <footer>
+            <div id="footer" className="container">
+              <a href="https://twitter.com/TylerBeck__" target="_blank"><i class="nes-icon twitter"></i></a>
+              <a href="https://www.linkedin.com/in/tyler-beck-profile/" target="_blank"><i class="nes-icon linkedin"></i></a>
+              <a href="https://github.com/Tyler-Beck" target="_blank"><i class="nes-icon github"></i></a>
+              <p>&copy; 2024 Tyler Beck</p>
+            </div>
+          </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
